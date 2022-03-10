@@ -1,0 +1,6 @@
+1. Câu lệnh hiển thị hộp thoại:
+    alert (giá trị cần hiển thị);
+
+    #Cú pháp hiển thị tên lên hộp thoại:
+
+    alert ("Trần Đình Tuệ");

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập cạnh a");
+        let b = +prompt("Nhập cạnh b");
+        let c = +prompt("Nhập cạnh c");
+        if (a+b>c>0 && a+c>b>0 && b+c>a>0){
+            alert("Đó là ba cạnh của một tam giác.");
+            if (a == b || a == c || b == c){
+                alert("Đó là ba cạnh của một tam giác cân.");
+            }else if (a == b && a == c){
+                alert("Đó là ba cạnh của một tam giác đều.");
+            }else if (a*a + b*b == c*c|| a*a + c*c == b*b || c*c + b*b == a*a){
+                alert("Đó là ba cạnh của một tam giác vuông.")
+            }
+        } else{
+            alert("Đó không phải là ba cạnh của một tam giác.");
+        }
+    </script>
+</body>
+</html>

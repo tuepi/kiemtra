@@ -1,0 +1,15 @@
+Các bước để code nhận a và b từ 2 ô input và hiển thị S = a*b ra thẻ h1:
+-Bước 1:
+    -Tạo thẻ h1 với id là "demo" : <h1 id ="demo"></h1>
+-Bước 2:
+    -Tạo 2 ô nhập giá trị lần lượt là a và b bằng thẻ input và gán id cho mỗi ô:
+        <input type="text" id="n1" value="a">
+        <input type="text" id="n1" value="b">
+-Bước 3:
+    -Tạo thẻ script và viết code như sau:
+        <script>
+            let a = document.getElementById("n1");___khai báo và gán a là giá trị trong thẻ có id là "n1"
+            let b = document.getElementById("n2");___Khai báo và gán b là giá trị trong thẻ có id là "n2"
+            let S =a*b;                           ___Khai báo và gán giá trị cho S
+        document.getElementById("demo").innerHTML = S;   ___Tìm phần tử có id "demo" thay đổi nội dung trong HTML thành S
+        </script>
