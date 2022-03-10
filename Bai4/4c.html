@@ -5,13 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="sa">
+<input type="text" id="sb">
+<button onclick="tong()">Ấn vào</button>
 <p id="demo"></p>
     <script>
-        let a = +prompt("Nhập a");
-        let b = +prompt("Nhập b");
-        let ssh = (b - a + 1);
-        let S = ((a+b)*ssh/2);
-    document.getElementById("demo").innerHTML = "Tổng các số từ " + a + " đến " + b + " là " + S;
+        function tong() {
+            let a = document.getElementById("sa").value;
+            let b = document.getElementById("sb").value;
+            let ssh = (b - a + 1);
+            let S = ((+a + +b) * ssh / 2);
+            document.getElementById("demo").innerHTML = "Tổng các số trong dãy từ " + a + " đến " + b + " là " + S;
+        }
     </script>
 </body>
 </html>

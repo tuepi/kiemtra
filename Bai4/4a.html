@@ -5,13 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="na">
+<button onclick="tinh()">Ấn vào</button>
+<p id="hien"></p>
+<p id="hien1"></p>
 <script>
-    let a = +prompt("Nhập vào cạnh hình vuông");
-    let C = a * 4;
-    let S = a * a;
-    document.write("Chu vi hình huông có độ dài cạnh " + a + " là " + C);
-    document.write("<br>");
-    document.write("Diện tích hình vuông có độ dài cạnh " + a + " là " + S);
+    function tinh() {
+    let a = document.getElementById("na");
+    let C = a.value * 4;
+    let S = a.value * a.value;
+    document.getElementById("hien").innerHTML= "Chu vi hình huông có độ dài cạnh " + a.value + " là " + C;
+    document.getElementById("hien1").innerHTML= "Diện tích hình vuông có độ dài cạnh " + a.value + " là " + S;
+    }
 </script>
 </body>
 </html>

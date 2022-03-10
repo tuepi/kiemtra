@@ -5,14 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="sa">
+<input type="text" id="sb">
+<button onclick="ham()">Ấn vào</button>
+<p id="ht"></p>
+<p id="ht1"></p>
 <script>
-    let a = +prompt("Nhập vào a");
-    let b = +prompt("Nhập vào b");
-    let A = a * a;
-    let B = a ** b;
-    document.write("a^2 bằng " + A);
-    document.write("<br>");
-    document.write("a^b bằng" + B);
+    function ham() {
+        let a = document.getElementById("sa");
+        let b = document.getElementById("sb");
+        let A = a.value * a.value;
+        let B = a.value ** b.value;
+        document.getElementById("ht").innerHTML = "a^2 bằng " + A;
+        document.getElementById("ht1").innerHTML = "a^b bằng " + B;
+    }
 </script>
     </body>
 </html>

@@ -5,8 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<input type="text" id="y">
+<button onclick="theKy()">Ấn đây!</button>
+<p id="tk"></p>
 <script>
-    let
+    function theKy() {
+        let nam = document.getElementById("y").value;
+        let theky = parseInt(nam/100)+1;
+        document.getElementById("tk").innerHTML= "Năm " + +nam + " thuộc thế kỷ " + theky;
+    }
 </script>
 </body>
 </html>

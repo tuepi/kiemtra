@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bước 1: Tạo thẻ h1 với id là"demo"-->
+<h1 id ="demo"></h1>
+<!--Bước 2: Tạo 2 ô input có id lần lượt là "n1", "n2" để nhận giá trị khi nhập vào.-->
+<input type="text" id="n1">
+<input type="text" id="n2">
+<!--Bước 3: Tạo nút bấm với sự kiện onclick để thực hiện các thao tác ứng với hàm "f()" khi click vào.-->
+<button type="button" onclick="f()">Tính</button>
+<!--Bước 4: Tạo thẻ script để tạo hàm "f()"-->
+<script>
+    function f() {
+        //Khai báo lần lượt biến a, b tạo liên kết với thẻ có id lần lượt là "n1", "n2".
+        let a = document.getElementById("n1");
+        let b = document.getElementById("n2");
+        //Khai báo và gán giá trị cho S là tích của 2 giá trị( value) a và b.
+        let S = a.value * b.value;
+        //Tìm thẻ có id là "demo"(thẻ h1) để thay đổi và hiển thị ra S.
+        document.getElementById("demo").innerHTML = "Tích của 2 số là " + S;
+    }
+</script>
+</body>
+</html>
